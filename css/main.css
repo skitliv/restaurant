@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+}
+section.secProducts{
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    height: 300px;
+    width: 100%;
+}
+
+.conItem{
+    border-radius: 7px;
+    background-color: rgb(75, 179, 211);  
+    border: 3px solid #000;  
+}
+.conItem p{
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.conProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+ 
+}
+
+.conProductos > div{
+    margin: 3.5px;
+    padding: 3.5px;
+}
+.conItem img{   
+    max-width: inherit;
+    max-height: 50px;
+}
+p { margin: 0 !important; }
+
+.selected{
+    border: solid 3px blue;
+}
+
