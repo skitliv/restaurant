@@ -11,71 +11,61 @@ include 'php/header.php';
     <section class="secondMenu" >
         <nav>
             <ul>
-            <button class="custom-btn btn-16">Platos Fuerte </button>
-            <button class="custom-btn btn-16">Postres </button>
-           
+            <button class="custom-btn btn-16" rel= 'PlatoFuerte' id="dishShow" >Platos Fuerte </button>
+            <button class="custom-btn btn-16" rel= 'Postres'>Postres </button> 
+            <button class="custom-btn btn-16" rel= 'Sides'>Sides </button> 
 
-                
             </ul>
         </nav>
     </section>
 
     <!-- section the productos -->
 <section class="secProducts">
-  <div class="categorias Postres">     
-  
-  <div class="conProductos">
-  <!-- 1 -->
-  <div class="conItem">
-         <div class="itemName"> <p class="nombreProduct">Pilsene <i class="fas fa-cog"></i></p> <p>precio: $3.5</p> </div> 
-         <div class="productImg"> <img src="img/productos/pizza.jpg" alt="">  </div>
-         <div class="itemExpand">
-             <div class="simpleView"></div>
-             <div class="advanceView"></div>
-         </div>
-        
-  </div>
-<!-- 2 -->
-  <div class="conItem">
-         <div class="itemName"> <p>IPA <i class="fas fa-cog"></i></p> <p>precio: $7</p> </div> 
-         <div class="productImg"> <img src="img/productos/IPA.jpg" alt="">  </div>
-         <div class="itemExpand">
-             <div class="simpleView"></div>
-             <div class="advanceView"></div>
-         </div>  
-  </div>
- 
-  </div> 
+<?php
+include 'dishCategorias.php';
 
-  <div class="categorias pf">     
-  
-  <div class="conProductos">
-      
-  <!-- 1 -->
-  <div class="conItem">
-         <div class="itemName"> <p class="nombreProduct">Arroz con pollo <i class="fas fa-cog"></i></p> <p>precio: $3.5</p> </div> 
-         <div class="productImg"> <img src="img/productos/pizza.jpg" alt="">  </div>
-         <div class="itemExpand">
-             <div class="simpleView"></div>
-             <div class="advanceView"></div>
-         </div>
-        
-  </div>
-<!-- 2 -->
-  <div class="conItem">
-         <div class="itemName"> <p>IPA <i class="fas fa-cog"></i></p> <p>precio: $8</p> </div> 
-         <div class="productImg"> <img src="img/productos/IPA.jpg" alt="">  </div>
-         <div class="itemExpand">
-             <div class="simpleView"></div>
-             <div class="advanceView"></div>
-         </div>  
-  </div>
- 
-  </div> 
-
-
-  <!-- categorias -->
+?>
 </section>
+<section class="submitSection">
+    <form action="" id="submitOrder">
+    <table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Cantidad</th>
+      <th>Tamaño</th>
+      <th>Detalles</th>
+      <th>Precio por unidad</th>
+      <th>Total</th>
+    </tr>
+   </thead>
+   <tbody id="trParent">
+
+     
+  </tbody>
+</table>
+
+<!-- informacion total table  -->
+<table>
+  <thead>
+    <tr>
+      <th>Total absoluto</th>
+      
+    </tr>
+   </thead>
+   <tbody id="totalAbs">
+    <tr>
+        <td id="totality">1000</td>
+    </tr>
+     
+  </tbody>
+</table>
+
+
+    </form>
+</section>
+
+
 </div>
 
 

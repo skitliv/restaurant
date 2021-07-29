@@ -6,7 +6,7 @@ include "php/conn.php";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Index</title>
+    <title>Restaurant</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="../assets/logo/favicon.ico">
 

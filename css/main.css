@@ -31,10 +31,7 @@ section.secProducts{
     margin: 3.5px;
     padding: 3.5px;
 }
-.conItem img{   
-    max-width: inherit;
-    max-height: 50px;
-}
+
 p { margin: 0 !important; }
 
 .selected{

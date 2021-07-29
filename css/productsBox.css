@@ -1,0 +1,23 @@
+ h2{
+ text-align: center;
+ color: red;
+}
+.conItem img{
+    width: 100%;
+    height: auto;
+    max-height: 75px;
+  }
+  @supports(object-fit: cover){
+      .conItem img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+
+  /* submit order */
+
+  .submitSection{
+      border: 3px solid white;
+      min-height: 100px;
+  }
