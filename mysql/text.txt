@@ -1,0 +1,1 @@
+insert into `order` (`IDorder`, `iDemployee` ,  `table`, `seat` ) values  ( 2 , 1 , 6 , 3 );  // para crear una orden

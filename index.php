@@ -49,22 +49,31 @@ include 'dishCategorias.php';
 <table>
   <thead>
     <tr>
-      <th>Total absoluto</th>
+      <th>Total</th>
+      <th>+ Inpuesto 6%</th>
       
     </tr>
    </thead>
    <tbody id="totalAbs">
     <tr>
-        <td id="totality">1000</td>
+        <td><input type="text" id="totality" name="subtotal" readonly="readonly"></td>
+        <td><input type="text" id="totalTax" name="totalTax" readonly="readonly"></td>
+        <input type="number" id="tableR" name="tableR" value = '' >
+        <input type="number" id="seat" name="seat" value="" >
+
     </tr>
      
   </tbody>
 </table>
 
+<button class="custom-btn btn-16" type="submit" id="submit" >submit </button> 
 
     </form>
 </section>
+<section id="envioAnuncio">
 
+
+</section>
 
 </div>
 

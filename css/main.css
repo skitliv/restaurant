@@ -37,4 +37,6 @@ p { margin: 0 !important; }
 .selected{
     border: solid 3px blue;
 }
-
+.submitSection button {
+    color: aliceblue;
+}

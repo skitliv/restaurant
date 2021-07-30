@@ -3,7 +3,7 @@ include 'php/conn.php';
 include 'php/header.php';
 // $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 $sql= "SELECT * FROM menu order by category";
-$result =mysqli_query($mysqli,$sql);
+$result =mysqli_query($conn,$sql);
 $check = 'some';
 $end = '';
 if (mysqli_num_rows($result)>0) {

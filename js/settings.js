@@ -2,6 +2,7 @@
 // calculadora
 console.log('Aqui esta la calculadora');
 console.log('js/settings.js');
+let contador = 0;
 let secProducts1 = document.querySelector('.secProducts');
 secProducts1.addEventListener('click',function (event) {
     let e = event.target;
@@ -15,18 +16,19 @@ secProducts1.addEventListener('click',function (event) {
         }
 
     } else if (e.tagName == 'BUTTON' &&  e.classList.contains('enviarBtn'))  {
+        contador = ++contador;
         let contenedor = e.closest('.conItem');
         let precio = contenedor.querySelector('.pprice').textContent ;
         let nombre = '<td>' + contenedor.querySelector('.nombreProduct').textContent + "</td>";
         let precioCon = '<td class = "precioTD">' + precio + "</td>";
-        let cantidad = '<td><input name = "cantidadInput" type="number" value = "1" class = "cantidadInput" onchange="suma(event)" > </td>';
+        let cantidad = '<td><input name = "cantidadInput'+ contador +'" type="number" value = "1" class = "cantidadInput" onchange="suma(event)" > </td>';
         let tamaño = `<select name="cars" id="cars">
         <option value="Pequeño">Pequeño</option> 
         <option value="Madiano" selected>Medium</option>      
         <option value="Grande">Grande</option>       
         </select>
          </td>  `;
-        let detalles = '<td>Sin cebollini</td>';
+        let detalles = '<td><input type= "text" value = "something" name = "detalles"></td>';
         let totalRow = '<td class = "totalRow"> '+ precio + '</td>';    
         
 
@@ -61,12 +63,16 @@ function sumT() {
 
     $(".totalRow").each(function(index,value){
       currentRow = parseFloat($(this).text());
-      TotalValue += currentRow
+      TotalValue += currentRow;
     });
 
-    document.getElementById('totality').innerHTML = TotalValue;
 
+    document.getElementById('totality').value = TotalValue;
+    let tax = textContent = TotalValue + TotalValue * 0.06;
+    document.getElementById('totalTax').value = parseFloat(tax).toFixed(2);
 };
+
+
 
 sumT();
 
