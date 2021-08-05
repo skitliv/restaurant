@@ -25,10 +25,14 @@ $.ajax({
                      method:"POST",  
                      data:$('#submitOrder').serialize(),   
                      success:function(data){  
+                          console.log(data);
                           $('#submitOrder').trigger("reset");
-                          $('#envioAnuncio').html(data);                            
+                          $('#envioAnuncio').html(data); 
+                          $('#trParent').html('');
+                          contador = 0;                          
                      }  
                 }); 
 
 	e.preventDefault();
+     
 });// btn click

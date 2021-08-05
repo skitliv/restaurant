@@ -21,8 +21,9 @@ if (mysqli_num_rows($result)>0) {
             // product
             $output .= '
             <div class="conItem">
+            <input type ="hidden" class = "hiddenDish" value= '.$row["idDish"].' >
             <div class="itemName"> <p class="nombreProduct"> '.$row["name"] .' </p>  <p class = "pprice" >'. $row['price'] .' </p> </div> 
-            <div class="productImg"> <img src="img/productos/pizza.jpg" alt="">  </div>
+            <div class="productImg"> <img src="img/productos/'.$row["img"] .'.jpg" alt="">  </div>
            
             <div class="itemExpand">
                 <div class="simpleView"></div>

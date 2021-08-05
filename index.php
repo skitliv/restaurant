@@ -34,6 +34,7 @@ include 'dishCategorias.php';
       <th>Nombre</th>
       <th>Cantidad</th>
       <th>Tamaño</th>
+      <th>Seat</th>
       <th>Detalles</th>
       <th>Precio por unidad</th>
       <th>Total</th>
@@ -57,10 +58,9 @@ include 'dishCategorias.php';
    <tbody id="totalAbs">
     <tr>
         <td><input type="text" id="totality" name="subtotal" readonly="readonly"></td>
-        <td><input type="text" id="totalTax" name="totalTax" readonly="readonly"></td>
-        <input type="number" id="tableR" name="tableR" value = '' >
-        <input type="number" id="seat" name="seat" value="" >
-
+        <td><input type="text" id="totalTax" name="total" readonly="readonly"></td>
+        <input type="number" id="tableR" name="tableR" value = '' placeholder="Mesa" >
+        <input type="hidden" id="rowsCounter" name="rowsCounter" value = ''>
     </tr>
      
   </tbody>
