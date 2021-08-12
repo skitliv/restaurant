@@ -17,7 +17,7 @@ $total =  mysqli_real_escape_string($conn,$_POST['total']);
 
 
 // send orders 
-$misqldata = " INSERT INTO `order` (`iDemployee` , `table`,`subtotal` ,`total` ) VALUES  ( $employee , '$tableR','$subtotal' ,'$total' );";  
+$misqldata = " INSERT INTO `order` (`iDemployee` , `table`,`subtotal` ,`total`,`status` ) VALUES  ( $employee , '$tableR','$subtotal' ,'$total','ordered' );";  
 	mysqli_query($conn, $misqldata);
 
 $lastOne = mysqli_insert_id($conn);	
