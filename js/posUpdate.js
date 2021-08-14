@@ -1,5 +1,5 @@
 console.log('funciono soy kitUpdate');
-let myVar = "General";
+let myVar = "Postres";
 function runer() {
     setInterval(() => {
         $.ajax({

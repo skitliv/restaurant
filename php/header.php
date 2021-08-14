@@ -11,8 +11,8 @@ include "php/conn.php";
     <link rel="icon" type="image/png" href="../assets/logo/favicon.ico">
 
     <link rel="stylesheet" href="css/style.css">
-   
-    
+    <link rel="stylesheet" href="css/ex.css">
+    <link rel="stylesheet" href="css/kitchen.css">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="../assets/jquery/jquery.js"></script>
     <!-- <link rel="stylesheet" href="../assets/bootstrap4.3.1/css/bootstrap.css">
